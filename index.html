@@ -9,40 +9,46 @@
     <title>Decodificador de Texto</title>
 </head>
 <body>
-    <header>
-        <div>
-            <img src="logo-alura.svg" alt="Logo da Alura">
-        </div>
-    </header>
-    <div class="container">
-        <section id="entrada">
-            <form>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
-                <div class="opcoes">
-                    <span><img src="exclamacao.svg" alt="Ponto de exclamação"> Apenas letras minúsculas e sem acento.</span>
-                    <div class="botoes">
-                        <button id="criptografar">Criptografar</button>
-                        <button id="descriptografar">Descriptografar</button>
-                    </div>
-                </div>
-            </form>
-        </section>
-        <section id="saida">
-            <div class="sem-mensagem">
-                <img src="pessoa-com-lupa-na-mao.svg" alt="Pessoa com uma lupa na mão">
-                <h2>Nenhuma mensagem encontrada</h2>
-                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-            </div>
-            <form class="resultado">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+    <div class="main-container">
+        <div class="header-container">
+            <header>
                 <div>
-                    <button class="copiar">Copiar</button>
+                    <img src="logo-alura.svg" alt="Logo da Alura">
                 </div>
-            </form>
-        </section>
+            </header>
+        </div>
+        <div class="content-container">
+            <section class="input-text">
+                <form>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+                    <div class="options">
+                        <span><img src="exclamacao.svg" alt="Ponto de exclamação">Apenas letras minúsculas e sem acento.</span>
+                        <div class="buttons">
+                            <button id="encrypt">Criptografar</button>
+                            <button id="decrypt">Descriptografar</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <section class="output-text">
+                <div class="no-message">
+                    <img src="no-message.svg" alt="Pessoa com uma lupa na mão, visualizando um diamente.">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <form class="result">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div>
+                        <button class="copy">Copiar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div class="footer-container">
+            <footer>
+                <p>Desenvolvido por Gilberto Martins</p>
+            </footer>
+        </div>
     </div>
-    <footer>
-        <p>Desenvolvido por Gilberto Martins</p>
-    </footer>
 </body>
 </html>

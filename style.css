@@ -1,3 +1,7 @@
+:root {
+    --max-width: 1140px;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,7 +9,7 @@
     font-family: 'Inter', sans-serif;
 }
 
-body {
+.main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,56 +19,58 @@ body {
     background-color: #F3F5FC;
 }
 
-header {
-    padding: 40px;
+.header-container {
+    display: flex;
+    justify-content: flex-start;
     width: 100%;
-    max-width: 1440px;
-    max-height: 1024px;
+    max-width: var(--max-width);
+    padding: 40px 0px;
 }
 
-.container {
+.content-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
-    width: 1440px;
-    height: 1024px;
-    padding-bottom: 100px;
+    max-width: var(--max-width);
+    height: 100vh;
 }
 
-#entrada {
-    width: 100%;
-    height: 100%;
+.input-text {
+    padding: 40px;
 }
 
-#entrada form {
+.input-text form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 80px 0 200px;
-    height: 100%;
 }
 
-#entrada form textarea {
+.input-text form textarea {
     font-size: 32px;
     background-color: #F3F5FC;
     border: none;
     outline: none;
     color: #0A3871;
+    resize: none;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin-bottom: 10px;
 }
 
 textarea::placeholder {
     color: #0A3871;
 }
 
-.opcoes span {
+.options span {
     font-size: 18px;
 }
 
-#entrada form .botoes {
+.input-text form .buttons {
     display: flex;
     justify-content: space-between;
     gap: 24px;
+    margin-top: 10px;
 }
 
 button {
@@ -73,7 +79,7 @@ button {
     cursor: pointer;
 }
 
-#criptografar {
+#encrypt {
     background: #0A3871;
     padding: 24px;
     border-radius: 24px;
@@ -81,7 +87,7 @@ button {
     color: #ffffff;
 }
 
-#descriptografar {
+#decrypt {
     background-color: #F3F5FC;
     padding: 24px;
     border-radius: 24px;
@@ -89,23 +95,37 @@ button {
     color: #0A3871;
 }
 
-#saida .sem-mensagem {
+.output-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 40px;
+}
+
+.output-text .no-message {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 1024px;
-    padding: 0 40px;
+    height: 100%;
+    padding: 40px;
     background-color: #ffffff;
     border-radius: 24px;
     gap: 15px;
-    box-shadow: 0px 0px 30px 0px #EEEEEE;
-
 }
 
-.resultado {
+.result {
     display: none;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0px;
+    background-color: #0A3871;
 }
 
 footer {
@@ -113,8 +133,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: var(--max-width);
     font-size: 22px;
     color: #ffffff;
-    background-color: rgb(10, 56, 112, 0.5);
-    height: 70px;
 }
