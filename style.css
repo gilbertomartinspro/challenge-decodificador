@@ -154,7 +154,6 @@ button {
     align-items: center;
     text-align: center;
     height: 100%;
-    gap: 10px;
     position: relative;   
 }
 
@@ -218,12 +217,13 @@ footer {
 }
 @media screen and (max-width: 430px) {
     .header-container {
+        margin-top: 20px;
         padding: 20px;
     }
     .content-container {
         flex-direction: column;
-        padding: 20px;
-        gap: 40px;
+        padding: 40px 20px;
+        gap: 10px;
     }
     .input-text {
         width: 100%;

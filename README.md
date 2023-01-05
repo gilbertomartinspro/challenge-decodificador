@@ -39,4 +39,5 @@ Bom projeto!
 
 ## Resultado do desafio
 
-### Layout desktop
+### Layout na versão desktop
+![Tela na versão desktop](decodificador-desktop.png)
