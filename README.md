@@ -39,5 +39,12 @@ Bom projeto!
 
 ## Resultado do desafio
 
-### Layout na versão desktop
-![Tela na versão desktop](decodificador-desktop.png)
+### Layout na versão para desktop
+![Tela na versão para desktop](decodificador-desktop.png)
+
+### Layout na versão para tablet
+![Tela na versão para tablet](decodificador-tablet.png)
+
+### Layout na versão para celular
+![Tela na versão para celular](decodificador-mobile.png)
+
