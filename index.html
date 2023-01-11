@@ -13,19 +13,19 @@
         <div class="header-container">
             <header>
                 <div>
-                    <img src="logo-alura.svg" alt="Logo da Alura">
+                    <a href="index.html"><img src="logo-alura.svg" alt="Logo da Alura"></a>
                 </div>
             </header>
         </div>
         <div class="content-container">
             <section class="input-text">
                 <form>
-                    <textarea name="textInputArea" id="textInputArea" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+                    <textarea name="informedText" id="informedText" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
                     <div class="options">
                         <span><img src="exclamacao.svg" alt="Ponto de exclamação"> Apenas letras minúsculas e sem acento.</span>
                         <div class="buttons">
-                            <button id="encrypt">Criptografar</button>
-                            <button id="decrypt">Descriptografar</button>
+                            <button type="button" id="encrypt">Criptografar</button>
+                            <button type="button" id="decrypt">Descriptografar</button>
                         </div>
                     </div>
                 </form>
@@ -37,9 +37,8 @@
                     <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
                 </div>
                 <form class="result">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <button class="btn-copy">Copiar</button>
-                    
+                    <textarea name="resultText" id="resultText" cols="30" rows="10" disabled></textarea>
+                    <button type="button" id="copy" class="btn-copy">Copiar</button>
                 </form>
             </section>
         </div>
@@ -49,5 +48,6 @@
             </footer>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
