@@ -4,6 +4,7 @@ let result = document.querySelector(".result");
 let resultText = document.getElementById("resultText");
 let btnEncrypt = document.querySelector("#encrypt");
 let btnDecrypt = document.querySelector("#decrypt");
+let btnCopy = document.querySelector("#copy");
 
 function viewResult() {
     noMessage.style.display = "none";
@@ -53,3 +54,11 @@ function decrypt() {
 }
 
 btnDecrypt.onclick = decrypt;
+
+function copy() {
+    navigator.clipboard.writeText(resultText.value);
+    alert("Texto copiado para área de transferência.");
+    reset();
+}
+
+btnCopy.onclick = copy;
