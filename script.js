@@ -1,10 +1,26 @@
-let informedText = document.getElementById("informedText");
-let noMessage = document.querySelector(".no-message");
-let result = document.querySelector(".result");
-let resultText = document.getElementById("resultText");
-let btnEncrypt = document.querySelector("#encrypt");
-let btnDecrypt = document.querySelector("#decrypt");
-let btnCopy = document.querySelector("#copy");
+const informedText = document.querySelector("#informedText");
+const noMessage = document.querySelector(".no-message");
+const result = document.querySelector(".result");
+const resultText = document.getElementById("resultText");
+const btnEncrypt = document.querySelector("#encrypt");
+const btnDecrypt = document.querySelector("#decrypt");
+const btnCopy = document.querySelector("#copy");
+
+informedText.addEventListener("keypress", function(e) {
+    if(!checkChar(e)) {
+        e.preventDefault();
+        alert("Digite apenas letras minúsculas e sem acento.");
+    }
+});
+
+function checkChar(e) {
+    const char = String.fromCharCode(e.keyCode);
+    const pattern = '[a-z0-9]';
+    
+    if(char.match(pattern) || e.keyCode == 32 || e.keyCode == 13) {
+        return true;
+    }
+}
 
 function viewResult() {
     noMessage.style.display = "none";
