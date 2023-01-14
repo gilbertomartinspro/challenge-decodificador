@@ -41,11 +41,11 @@ Bom projeto!
 ## Resultado do desafio
 
 ### Layout na versão para desktop
-![Tela na versão para desktop](decodificador-desktop.png)
+![Tela na versão para desktop](desktop.png)
 
 ### Layout na versão para tablet
-![Tela na versão para tablet](decodificador-tablet.png)
+![Tela na versão para tablet](tablet.png)
 
 ### Layout na versão para celular
-![Tela na versão para celular](decodificador-mobile.png)
+![Tela na versão para celular](mobile.png)
 
