@@ -15,7 +15,7 @@ informedText.addEventListener("keypress", function(e) {
 
 function checkChar(e) {
     const char = String.fromCharCode(e.keyCode);
-    const pattern = '[a-z0-9]';
+    const pattern = '[a-z]';
     
     if(char.match(pattern) || e.keyCode == 32 || e.keyCode == 13) {
         return true;
